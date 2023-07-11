@@ -1,0 +1,40 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  height: 100vh;
+}
+
+.hero_left {
+  width:45%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_left p {
+  font-size: 1.2rem;
+}
+
+.hero_left h1 {
+  margin-bottom: 0px;
+}
+.hero_right {
+  width:55%;
+  height: 100%;
+
+}
+
+.button_group {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
