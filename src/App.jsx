@@ -3,6 +3,10 @@ import Spline from '@splinetool/react-spline';
 import { motion } from "framer-motion"
 
 function App() {
+  const word = "Spline, Glassmorphism, and Interactivity";
+  const splited = word.split(" ");
+  console.log(splited);
+
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
@@ -39,7 +43,11 @@ function App() {
     <>
       <div className="hero">
         <motion.div className="hero_text" variants={container} initial="hidden" animate="visible">
-          <motion.h1 variants={child} >Spline, Glassmorphism, and Interactivity</motion.h1>
+        {splited.map((split, index) => (
+                   <motion.h1 key={index} variants={child} >
+                     {split}
+                   </motion.h1>
+                 ))}
           <p> Join us on this captivating journey as we explore the stunning fusion of transparent elegance and dynamic interaction, offering a unique and unforgettable experience. </p>
           <div className="button_group">
           <button>Enllegate</button>
