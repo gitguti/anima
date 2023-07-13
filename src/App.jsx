@@ -3,7 +3,7 @@ import Spline from '@splinetool/react-spline';
 import { motion } from "framer-motion"
 
 function App() {
-  const word = "Spline, Glassmorphism, and Interactivity";
+  const word = "Spline, Framer-Motion, and Interactivity";
   const splited = word.split(" ");
   console.log(splited);
 
