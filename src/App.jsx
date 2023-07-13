@@ -44,14 +44,14 @@ function App() {
       <div className="hero">
         <motion.div className="hero_text" variants={container} initial="hidden" animate="visible">
         {splited.map((split, index) => (
-                   <motion.h1 key={index} variants={child} >
+                   <motion.h1 className='blend' key={index} variants={child} >
                      {split}
                    </motion.h1>
                  ))}
-          <p> Join us on this captivating journey as we explore the stunning fusion of transparent elegance and dynamic interaction, offering a unique and unforgettable experience. </p>
+          <p className="hero_text_dark"> Join us on this captivating journey as we explore the stunning fusion of transparent elegance and dynamic interaction, offering a unique and unforgettable experience. </p>
           <div className="button_group">
-          <button>Enllegate</button>
-          <button>Quizas luego</button>
+          <button className='button_filled'>Enllegate</button>
+          <button className='button_outlined'>Quizas luego</button>
           </div>
         </motion.div>
         <div className="hero_bg">

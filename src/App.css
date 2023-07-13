@@ -11,15 +11,16 @@
 
 .hero {
   text-align: center;
-  color: #242424;
   height: 100vh;
   background-color: #CDD5F4;
   height: 100%;
   width: 100%;
-  border-radius:120px;
   position: relative;
   overflow: hidden;
-
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  border-radius:0px;
 }
 
 .hero_text {
@@ -29,10 +30,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
+  color: #242424;
+  mix-blend-mode: color-burn;
 }
 
 .hero_text p {
   font-size: 1.2rem;
+  color: #242424;
 }
 
 .hero_text_title {
@@ -42,10 +46,10 @@
 
 .hero_text h1 {
   margin-bottom: 0px;
-  font-size: 2.8rem;
+  font-size: 3rem;
   padding: 0;
-  mix-blend-mode: difference; /* Puedes ajustar el modo de mezcla según tus preferencias */
   margin-right: 15px;
+  margin-top: 5px;
 
 }
 .hero_bg {
@@ -64,6 +68,11 @@
 
 @media (min-width: 768px) {
   .hero_text h1 {
-    font-size: 4.6rem;
+    font-size: 6rem;
+  }
+  .hero {
+    border-radius:120px;
+    height: 90vh;
+    width: 90%;
   }
 }

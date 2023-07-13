@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: #242424;
-  background-color: #CDD5F4;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -43,18 +43,27 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+.button_outlined:hover {
   border-color: #646cff;
+  color: #646cff;
+
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.button_filled {
+  background-color: #1a1a1a;
+}
+.button_outlined {
+  background-color: transparent;
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
