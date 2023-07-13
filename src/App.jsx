@@ -3,7 +3,7 @@ import Spline from '@splinetool/react-spline';
 import { motion } from "framer-motion"
 
 function App() {
-  const word = "Spline, Framer-Motion, and Interactivity";
+  const word = "Motion, Interaction, Magic";
   const splited = word.split(" ");
   console.log(splited);
 
@@ -48,10 +48,14 @@ function App() {
                      {split}
                    </motion.h1>
                  ))}
-          <p className="hero_text_dark"> Join us on this captivating journey as we explore the stunning fusion of transparent elegance and dynamic interaction, offering a unique and unforgettable experience. </p>
+          <p className="hero_text_dark"> Embark on a creative journey as I explore animation tools like Framer Motion, GSAP, anima.js, Lottie, three.js, and Spline. I'll share experiments. </p>
           <div className="button_group">
-          <button className='button_filled'>Enllegate</button>
-          <button className='button_outlined'>Quizas luego</button>
+         <button className="button_filled">
+  <a href="https://designbygit.eth.limo" target="_blank" rel="noreferrer" >Discover My Portfolio</a>
+</button>
+<button className="button_outlined" target="_blank" rel="noreferrer" >
+  <a href="https://twitter.com/whynotgit">Follow Me</a>
+</button>
           </div>
         </motion.div>
         <div className="hero_bg">
