@@ -44,12 +44,17 @@ button {
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s ease-in-out, transform 0.5s ease-in-out;
 }
+
+.button_filled:hover {
+  transform: scale(1.05);
+}
+
 .button_outlined:hover {
   border-color: #646cff;
   color: #646cff;
-
+  transform: scale(1.05);
 }
 button:focus,
 button:focus-visible {

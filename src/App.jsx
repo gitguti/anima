@@ -1,6 +1,7 @@
 import './App.css'
 import Spline from '@splinetool/react-spline';
 import { motion } from "framer-motion"
+import {FaTwitter}  from "react-icons/fa";
 
 function App() {
   const word = "Motion, Interaction, Magic";
@@ -54,7 +55,10 @@ function App() {
   <a href="https://designbygit.eth.limo" target="_blank" rel="noreferrer" >Discover My Portfolio</a>
 </button>
 <button className="button_outlined" target="_blank" rel="noreferrer" >
-  <a href="https://twitter.com/whynotgit">Follow Me</a>
+  <a href="https://twitter.com/whynotgit">
+<FaTwitter className="button_icon" />
+    <span>Follow Me</span>
+    </a>
 </button>
           </div>
         </motion.div>
